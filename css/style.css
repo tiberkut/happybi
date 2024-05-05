@@ -15,6 +15,17 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  height: 100vh;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+  background-color: rgba(182, 114, 156, 0.87);
+  display: flex;
+  flex-direction: column;
 }
 
 /*
@@ -172,9 +183,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -244,4 +255,38 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+
+.centered-box {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.greetings {
+  margin-top: 0;
+  font-family: Arial, serif;
+  font-size: 32pt
+}
+
+.greeting-text {
+  font-family: Arial, serif;
+  font-size: 16pt
+}
+
+.from-who {
+  text-align: right;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 12pt
+}
+
+.button {
+  text-align: right;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 12pt;
+  color:revert;
+}
+
+
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>for MOM</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
 
@@ -20,66 +20,31 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
-  <style>
-    html {
-      height: 100vh;
-    }
 
-    body {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 20px;
-      height: 100vh;
-      background-color: rgba(182, 114, 156, 0.87);
-      display: flex;
-      flex-direction: column;
-    }
-  </style>
 </head>
 
 <body>
 <div>
-  <h1 style="margin-top: 0; font-family: Arial,serif; font-size: 32pt">Привіт, мамо!</h1>
-  <p style="font-family: Arial,serif; font-size: 16pt">Вітаю тебе з днем народження!
+  <h1 class="greetings">Привіт, мамо!</h1>
+  <p class="greeting-text">Вітаю тебе з днем народження!
     Бажаю мирного неба над головою,щастя,радості й щасливих дітей!
     Щоб все завжди в тебе виходило, щоб все було гарно у тебе із здоров'ям! Щасливого святкування!!!
   </p>
 </div>
-<div style="flex-grow: 2; display: flex; justify-content: center; align-items: center">
+<div class="centered-box">
   <img id="displayed-photo" src="img/download.jpg" alt="photo" height="400">
 </div>
 <div>
-  <p style="text-align: right; font-family: 'Comic Sans MS', sans-serif; font-size: 12pt">Від Тимура:)</p>
+  <p class="from-who">Від Тимура:)</p>
 </div>
-
-<script src="js/app.js"></script>
-</div>
-
 
 <div>
   <button onclick="displayPhoto()"><p
-    style="text-align: right; font-family: 'Comic Sans MS', sans-serif; font-size: 12pt">-->click here<--</p>
+    class="button">-->click here<--</p>
   </button>
 </div>
 
 <script src="js/app.js"></script>
-<script>
-  function displayPhoto() {
-    const url1 = "img/download.jpg";
-    const url2 = "img/iloveu.jpg";
-    const imgElement = document.getElementById("displayed-photo");
-    if (imgElement.src.includes(url1)) {
-      imgElement.src = url2;
-    } else {
-      imgElement.src = url1;
-    }
-
-  }
-</script>
-
-
-<script src="js/app.js"></script>
-
 
 </body>
 
